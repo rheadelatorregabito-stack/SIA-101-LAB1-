@@ -1,0 +1,79 @@
+### Test 1: Addition Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 10,
+  "num2": 5,
+  "operation": "add"
+}
+
+### Test 2: Subtraction Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 20,
+  "num2": 8,
+  "operation": "subtract"
+}
+
+### Test 3: Multiplication Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 15,
+  "num2": 5,
+  "operation": "multiply"
+}
+
+### Test 4A: Normal Division
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 20,
+  "num2": 4,
+  "operation": "divide"
+}
+
+### Test 4B: Division by Zero Error Handling
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 10,
+  "num2": 0,
+  "operation": "divide"
+}
+
+### Test 5: Modulo Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 17,
+  "num2": 5,
+  "operation": "modulo"
+}
+
+### Test 6: Power Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 2,
+  "num2": 4,
+  "operation": "power"
+}
+
+### Test 7: Square Root Operation
+POST http://localhost:3000/api/calculate
+Content-Type: application/json
+
+{
+  "num1": 49,
+  "num2": 0,
+  "operation": "square_root"
+}
